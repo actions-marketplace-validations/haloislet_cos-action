@@ -1,0 +1,31 @@
+name: 'cos action'
+description: 'cos action'
+author: 'haloislet <haloislet@gmail.com>'
+inputs:
+  command:
+    description: 'command'
+    required: true
+  secret_id:
+    description: 'cos secret id'
+    required: true
+  secret_key:
+    description: 'cos secret key'
+    required: true
+  bucket:
+    description: 'cos bucket name'
+    required: true
+  region:
+    description: 'cos bucket region'
+    required: true
+outputs:
+    success:
+        description: 'command execution result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.secret_id }}
+    - ${{ inputs.secret_key }}
+    - ${{ inputs.bucket }}
+    - ${{ inputs.region }}
+    - ${{ inputs.args }}
