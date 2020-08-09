@@ -1,6 +1,5 @@
-FROM python:3.9-rc-slim
+FROM haloislet/coscmd:1.8.6.17-slim
 
-RUN pip install --upgrade --disable-pip-version-check --no-cache-dir coscmd
 COPY "entrypoint.sh" "/entrypoint.sh"
 
 ENTRYPOINT ["bash", "/entrypoint.sh"]
