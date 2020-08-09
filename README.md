@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: upload
-      uses: haloislet/cos-action@v1
+      uses: haloislet/cos-action@v2
       with:
         COMMAND: coscmd upload -r ./ /
         SECRET_ID: ${{ secrets.SECRET_ID }}
