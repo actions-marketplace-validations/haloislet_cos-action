@@ -1,6 +1,9 @@
 name: 'cos action'
 description: 'cos action'
 author: 'haloislet <haloislet@gmail.com>'
+branding:
+  icon: 'play'
+  color: 'blue'
 inputs:
   command:
     description: 'command'
