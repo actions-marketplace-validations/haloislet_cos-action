@@ -1,4 +1,4 @@
-# cos action
+# cos action ![GitHub release (latest by date)](https://img.shields.io/github/v/release/haloislet/cos-action?color=brightgreen)
 
 基于 coscmd 的 gitHub action，用来操作腾讯云 cos
 
